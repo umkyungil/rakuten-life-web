@@ -1,0 +1,458 @@
+/*==================================================
+   tbl-seminar
+==================================================*/
+table.tbl-seminar {
+    width: 100%;
+    margin-top: 10px;
+    border-top: solid 1px #ccc;
+}
+table.tbl-seminar th {
+    position: relative;
+    width: 30%;
+    padding: 20px 60px 20px 15px;
+    border-bottom: solid 1px #ccc;
+    background: rgba(0,0,0,0.03);
+    text-align: left;
+    vertical-align: middle;
+}
+table.tbl-seminar th span {
+    display: block;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: normal;
+}
+table.tbl-seminar th small {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    width: 40px;
+    margin-top: -10px;
+    color: #fff;
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+}
+table.tbl-seminar th small.required {
+    background: #e2544a;
+}
+table.tbl-seminar th small.arbitrary {
+    background: #959595;
+}
+table.tbl-seminar td {
+    width: 70%;
+    padding: 20px 0 20px 25px;
+    border-bottom: solid 1px #ccc;
+    vertical-align: middle;
+}
+#content table.tbl-seminar td p {
+    margin: 10px 0;
+}
+table.tbl-seminar td input[type=text] {
+    width: 200px;
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0;
+    background: #e5e5e5;
+    font-size: 16px;
+    outline: none;
+}
+table.tbl-seminar td.inpt-name input[type=text] {
+    width: 180px;
+    margin: 0 20px 0 10px;
+}
+table.tbl-seminar td.inpt-name label {
+    display: inline-block;
+    width: 2em;
+    text-align: right;
+}
+table.tbl-seminar td.inpt-age input[type=text] {
+    width: 60px;
+    margin: 0 10px 0 0;
+}
+table.tbl-seminar td.inpt-phone input[type=text] {
+    width: 80px;
+}
+table.tbl-seminar td.inpt-email input[type=text] {
+    width: 300px;
+}
+table.tbl-seminar td span.agency-name input[type=text] {
+    height: 20px;
+    padding: 5px 10px;
+    vertical-align: 1px;
+}
+table.tbl-seminar td textarea {
+    width: 100%;
+    height: 150px;
+    *width: 98%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    background: #e5e5e5;
+    outline: none;
+}
+table.tbl-seminar td .select-wrap {
+    position: relative;
+    width: 200px;
+}
+table.tbl-seminar td .select-wrap:before {
+    z-index: 10;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    content: "";
+    width: 18px;
+    height: 11px;
+    margin-top: -5px;
+    background: url(/shared/img/common/select_arw.png) no-repeat 0 0 / 18px 11px;
+    pointer-events: none;
+}
+table.tbl-seminar td .select-wrap select {
+    width: 100%;
+    height: 40px;
+    padding: 5px 30px 5px 10px;
+    border: 0;
+    border-radius: 0;
+    outline: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    background: #e5e5e5;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+table.tbl-seminar td .select-wrap select:disabled {
+    color: #999;
+    background: #ccc;
+}
+table.tbl-seminar td .select-wrap select option {
+    background-color: #fff;
+}
+table.tbl-seminar td .select-wrap select::-ms-expand {
+    display: none;
+}
+table.tbl-seminar td .select-wrap select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #333;
+}
+table.tbl-seminar td label.radio {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 5px 5px 35px;
+    margin-right: 10px;
+}
+table.tbl-seminar td label.radio input[type="radio"] {
+    display: none;
+}
+table.tbl-seminar td label.radio span {
+    position: relative;
+}
+table.tbl-seminar td label.radio span:before {
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: -1px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(/shared/img/common/radio_off.png) no-repeat center center / 20px 20px;
+}
+table.tbl-seminar td label.radio input[type="radio"]:checked + span:before {
+    background: url(/shared/img/common/radio_on.png) no-repeat center center / 20px 20px;
+}
+table.tbl-seminar td label.checkbox {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 5px 5px 35px;
+    margin-right: 10px;
+}
+table.tbl-seminar td label.checkbox input[type="checkbox"] {
+    display: none;
+}
+table.tbl-seminar td label.checkbox span {
+    position: relative;
+}
+table.tbl-seminar td label.checkbox span:before {
+    display: block;
+    position: absolute;
+    left: -30px;
+    top: -1px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url(/shared/img/common/checkbox_off.png) no-repeat center center / 20px 20px;
+}
+table.tbl-seminar td label.checkbox input[type="checkbox"]:checked + span:before {
+    background: url(/shared/img/common/checkbox_on.png) no-repeat center center / 20px 20px;
+}
+table.tbl-seminar td ul li.schedule + li {
+    margin-top: 10px;
+}
+table.tbl-seminar td ul li.schedule a {
+    text-decoration: underline;
+}
+table.tbl-seminar td ul li.schedule a:hover {
+    text-decoration: none;
+}
+
+table.tbl-seminar td p.privacy {
+    padding: 15px 20px;
+    background: #f6f6f6;
+}
+table.tbl-seminar td label.checkbox.btn-agree {
+    display:block;
+    box-sizing:border-box;
+    width:120px;
+    margin-top:10px;
+    padding: 10px 20px 10px 50px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-right: 0;
+}
+#content table.tbl-seminar .link-privacy {
+    display: inline-block;
+}
+.btn-form {
+    margin-top: 30px;
+    text-align: center;
+}
+.btn-form button {
+    width: 400px;
+    padding: 20px 0;
+    color: #fff;
+    border: none;
+    background: #cd2b1f;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn-form button:hover {
+    background: #e75146;
+}
+.btn-form button span {
+    display: inline-block;
+    padding: 0 35px;
+    background: url(/shared/img/common/icn_send.png) no-repeat left center / 23px 21px;
+}
+
+@media screen and (max-width: 768px) {
+    .form-tbl.complete .btn-form {
+        padding-bottom: 20px;
+    }
+    table.tbl-seminar {
+        margin: 15px 0 20px;
+    }
+    table.tbl-seminar tr {
+        display: block;
+    }
+    table.tbl-seminar th {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+        margin-bottom: 5px;
+        border-bottom: none;
+        font-size: 14px;
+        background: none;
+    }
+    table.tbl-seminar th span {
+        font-size: 11px;
+    }
+    table.tbl-seminar th small {
+        position: absolute;
+        top: 15px;
+        right: 0;
+        margin-top: 0;
+    }
+    table.tbl-seminar td {
+        display: block;
+        width: 100%;
+        padding: 0 0 15px;
+        border-bottom: solid 1px #ccc;
+        font-size: 14px;
+    }
+    table.tbl-seminar td input[type=text] {
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+    }
+    table.tbl-seminar td.inpt-name input[type=text] {
+        width: 100px;
+        margin: 0 5px 0 0;
+    }
+    table.tbl-seminar td.inpt-email input[type=text] {
+        width: 100%;
+    }
+    table.tbl-seminar td textarea {
+        height: 120px;
+    }
+    table.tbl-seminar td .select-wrap {
+        width: 100%;
+    }
+    table.tbl-seminar td .select-wrap select {
+        font-size: 16px;
+    }
+    table.tbl-seminar td span.agency-name {
+        display: block;
+        padding: 0 0 0 30px;
+    }
+    table.tbl-seminar td span.agency-name input[type=text] {
+        height: 30px;
+        width: 180px;
+    }
+    table.tbl-seminar td label.checkbox.btn-agree {
+        display: block;
+        width:100%;
+        text-align: center;
+    }
+    .btn-form button {
+        width: 100%;
+    }
+}
+
+.lst-contents {
+    padding-left: 1.5em;
+}
+.lst-contents li {
+    position: relative;
+}
+.lst-contents li::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0.65em;
+    left: -1em;
+    width: 5px;
+    height: 5px;
+    background-color: #666;
+    border-radius: 100%;
+}
+/*==================================================
+   error message
+==================================================*/
+.form-error-block__list li {
+    list-style-type: disc;
+}
+
+li {
+    list-style: none;
+}
+.form-error-block {
+    color: #bf0000;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+body {
+    word-break: break-all;
+    word-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    line-height: 1.6;
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #333;
+}
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*==================================================
+   inline-wrap
+==================================================*/
+#inline-wrap {
+    position: relative;
+    margin: 10px auto;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+}
+#inline-wrap h1 {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+#inline-wrap .image img {
+    width: 100%;
+    max-width: 600px;
+}
+#inline-wrap .image, #inline-wrap .popup-modal-dismiss {
+    text-align: center;
+}
+#inline-wrap #map_canvas {
+    max-width: 600px;
+    height: 300px;
+}
+#inline-wrap dl {
+    max-width: 600px;
+}
+#inline-wrap dt {
+    float: left;
+    width: 80px;
+    text-align: right;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+}
+#inline-wrap dd {
+    margin-left: 100px;
+    padding: 0 0 10px 0;
+}
+/*==================================================
+   Finish Page
+==================================================*/
+#content .box-thanks {
+    margin-bottom: 50px;
+}
+#content .box-thanks p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+#content .box-thanks p.thanks {
+    font-size: 30px;
+    font-weight: bold;
+}
+#content .box-notes {
+    padding: 30px;
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+}
+#content .box-notes p {
+    margin-bottom: 0;
+}
+#content .box-notes p strong {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#content .box-notes p.annotation {
+    margin-bottom: 20px;
+    color: #e10000;
+}
+
+@media screen and (max-width: 768px) {
+    #content .box-thanks {
+        margin-bottom: 30px;
+    }
+    #content .box-thanks p.thanks {
+        font-size: 18px;
+    }
+    #content .box-thanks p {
+        text-align: left;
+    }
+    #content .box-notes {
+        padding: 15px;
+    }
+}
